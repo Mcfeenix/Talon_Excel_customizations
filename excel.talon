@@ -112,3 +112,73 @@ mail this: user.menu_select("File|Share|Send Workbook")
 	sleep(100ms)
     insert(excel_reference)
     key(return)
+
+app: /Excel/
+-
+
+# Cell navigation
+go previous cell: key(shift-tab)
+go up: key(up)
+go down: key(down)
+go left: key(left)
+go right: key(right)
+
+# Jump to edge of data region
+jump left: key(ctrl-left)
+jump right: key(ctrl-right)
+jump up: key(ctrl-up)
+jump down: key(ctrl-down)
+
+# End mode navigation (move to next nonblank cell)
+end left: key(end left)
+end right: key(end right)
+end up: key(end up)
+end down: key(end down)
+
+# Worksheet boundaries
+go last cell: key(ctrl-end)
+select to last: key(ctrl-shift-end)
+go first cell: key(ctrl-home)
+go top left: key(home scroll_lock)
+
+# Screen movement
+page down: key(pagedown)
+page up: key(pageup)
+page right: key(alt-pagedown)
+page left: key(alt-pageup)
+
+# Sheet navigation
+next sheet: key(ctrl-pagedown)
+previous sheet: key(ctrl-pageup)
+(last sheet | prior sheet): key(ctrl-pageup)
+
+# Cell movement
+next cell: key(tab)
+(move right | tab): key(tab)
+
+# Validation and objects
+show validation: key(alt-down)
+cycle shapes: 
+    key(ctrl-alt-5)
+    key(tab)
+exit shapes: key(escape)
+
+# Zoom
+zoom in: key(ctrl-alt-=)
+zoom out: key(ctrl-alt--)
+
+# Alternative phrasings for common commands
+(cell up | up one): key(up)
+(cell down | down one): key(down)
+(cell left | left one): key(left)
+(cell right | right one): key(right)
+
+# Directional jumps with alternative phrasings
+(edge left | jump to left): key(ctrl-left)
+(edge right | jump to right): key(ctrl-right)
+(edge up | jump to top): key(ctrl-up)
+(edge down | jump to bottom): key(ctrl-down)
+
+# Quick access to corners
+top left corner: key(ctrl-home)
+bottom right corner: key(ctrl-end)
