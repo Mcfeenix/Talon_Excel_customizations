@@ -1,4 +1,9 @@
 app: /Excel/
+# OR
+# app: excel
+# OR
+# app.exe: excel.exe
+# app.name: /Excel/
 -
 
 tag(): user.find_and_replace
