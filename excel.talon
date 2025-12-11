@@ -50,6 +50,24 @@ rename sheet: key(alt-h o r)
 pivot that: key(alt-n v t)
 
 # ----------------------------------------
+# Tabs
+
+select file: key(alt f)
+select home: key(alt h)
+select insert: key(alt n)
+select draw: key(alt j i)
+select page layout: key(alt p)
+select formulas: key(alt-m)
+select data: key(alt-a)
+select review: key(alt-r)
+select view: key(alt-w)
+select automate: key(alt-u)
+select developer: key(alt-l)
+select help: key(alt-y 1)
+select acrobat: key(alt-y 2)
+select power pivot: key(alt-y 3)
+
+# ----------------------------------------
 # Formatting
 
 # Copy cell content down to selected cells
